@@ -15,7 +15,8 @@ module.exports = {
       },
       maxWidth: {
         'weatherImg': '70px',
-        'smallWeatherImg': '40px'
+        'smallWeatherImg': '40px',
+        'loader': '50px'
       }
     }
   },
