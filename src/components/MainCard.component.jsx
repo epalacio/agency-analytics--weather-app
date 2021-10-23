@@ -19,13 +19,13 @@ const MainCard = ({cityData}) => {
     }
     
     return (
-        <div className=''>
-            <p className=''>Today</p>
-            <div className=''>
+        <div className='border-2 border-white flex flex-col justify-center items-center py-12'>
+            <p className='font-montserrat font-thin text-2xl'>Today</p>
+            <div className='flex flex-row items-center gap-x-4'>
                 <img className='max-w-weatherImg' src={images[cityData.daily[0].weather[0].main]} alt={cityData.daily[0].weather[0].main} />
-                <div className=''>
-                    <p className=''>{Math.round(cityData.daily[0].temp.day)}&deg;</p>
-                    <p className=''>{cityData.daily[0].weather[0].main}</p>
+                <div className='py-4'>
+                    <p className='font-teko text-6xl'>{Math.round(cityData.daily[0].temp.day)}&deg;</p>
+                    <p className='font-montserrat font-thin text-2xl'>{cityData.daily[0].weather[0].main}</p>
                 </div>
             </div>
         </div>
