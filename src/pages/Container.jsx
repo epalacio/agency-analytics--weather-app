@@ -1,13 +1,19 @@
-import MainCard from "../components/MainCard.component";
-import SmallCard from "../components/SmallCard.component";
+import MainCard from '../components/MainCard.component'
+import SmallCard from '../components/SmallCard.component'
 
-const Container = () => {
+const Container = ({cityData}) => {
     return (
-        <section>
-            <MainCard />
-            <SmallCard />
+        <section className=''>
+            <MainCard 
+                cityData={cityData}
+            />
+            <SmallCard
+                cityData={cityData}
+            />
         </section>
     );
 }
  
 export default Container;
+
+
