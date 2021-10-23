@@ -42,10 +42,10 @@ const App = () => {
   console.log(cityData)
 
   if (isLoading) {
-    return <div className="App"><Loading /></div>;
+    return <div className="App flex justify-center items-center bg-zumthor"><Loading /></div>;
   }
   return (
-    <div className="App">
+    <div className="App flex justify-center items-center bg-zumthor py-3 lg:py-12">
       <main className='lg:w-5/12'>
         <nav className="flex flex-row items-center">
           <ul className='flex flex-row items-center font-montserrat text-center gap-x-4 md:gap-x-8 pt-4 md:pt-16 px-4 mx-auto text-2xl lg:text-3xl'>
