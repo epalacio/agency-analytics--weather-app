@@ -11,6 +11,11 @@
       "src": "logoApple.png",
       "type": "image/png",
       "sizes": "192x192"
+    },
+    {
+      "src": "metaImg.png",
+      "type": "image/png",
+      "sizes": "192x192"
     }
   ],
   "start_url": ".",
