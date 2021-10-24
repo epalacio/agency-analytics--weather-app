@@ -39,7 +39,7 @@ const SmallCard = ({cityData}) => {
     return (
         <div className='flex flex-col lg:flex-row justify-between'>
             {updatedWeather.map(day => (
-                <div className='flex flex-row lg:flex-col items-center justify-around px-4 mx-auto py-6 border-2 border-white w-full' key={updatedWeather.indexOf(day)}>
+                <div className='flex flex-row lg:flex-col items-center justify-around px-4 mx-auto py-6 w-full border-r-6 last:border-r-0 border-white' key={updatedWeather.indexOf(day)}>
                     <p className='font-montserrat font-thin text-2xl'>{day.dayOfTheWeek}</p>
                     <img className='max-w-smallWeatherImg py-3' src={images[day.weather[0].main]} alt={day.weather[0].main} />
                     <p className='font-teko text-4xl'>{Math.round(day.temp.day)}&deg;</p>

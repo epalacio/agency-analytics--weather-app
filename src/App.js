@@ -4,7 +4,7 @@ import Loading from "./components/Loading.component"
 import Container from "./pages/Container"
 
 const weatherApi = {
-  key: '31fa89c04d6041b95b25669e5a8e3393',
+  key: process.env.REACT_APP_WEATHER_API_KEY,
   url: 'https://api.openweathermap.org/data/2.5/onecall?'
 }
 
@@ -38,8 +38,6 @@ const App = () => {
         setLoading(false)
       })
   }, [cityIndex])
-
-  console.log(cityData)
 
   if (isLoading) {
     return <div className="App flex justify-center items-center bg-zumthor"><Loading /></div>;

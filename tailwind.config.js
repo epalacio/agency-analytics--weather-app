@@ -17,11 +17,16 @@ module.exports = {
         'weatherImg': '70px',
         'smallWeatherImg': '40px',
         'loader': '50px'
+      },
+      borderWidth: {
+        '6': '6px'
       }
     }
   },
   variants: {
-    extend: {},
+    extend: {
+      borderWidth: ['last'],
+    }
   },
   plugins: [],
 }
