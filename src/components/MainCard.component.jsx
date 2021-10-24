@@ -19,7 +19,7 @@ const MainCard = ({cityData}) => {
     }
     
     return (
-        <div className='border-2 border-white flex flex-col justify-center items-center py-12'>
+        <div className='border-b-6 border-white flex flex-col justify-center items-center py-12 rounded-t-lg'>
             <p className='font-montserrat font-thin text-2xl'>Today</p>
             <div className='flex flex-row items-center gap-x-4'>
                 <img className='max-w-weatherImg' src={images[cityData.daily[0].weather[0].main]} alt={cityData.daily[0].weather[0].main} />
