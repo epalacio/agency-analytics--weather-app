@@ -4,7 +4,7 @@ import Loading from "./components/Loading.component"
 import Container from "./pages/Container"
 
 const weatherApi = {
-  key: process.env.REACT_APP_WEATHER_API_KEY,
+  key: '31fa89c04d6041b95b25669e5a8e3393',
   url: 'https://api.openweathermap.org/data/2.5/onecall?'
 }
 
